@@ -1,0 +1,51 @@
+.treeContainer {
+  padding: 3px;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.elementContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  background-color: light-grey;
+}
+
+.elementContainer:hover {
+  background-color: light-grey;
+}
+
+.elementContainer.selected {
+  background-color: lightBlue;
+}
+
+.leftGroup, .rightGroup {
+  display: flex;
+}
+
+.rightGroup {
+  visibility: hidden;
+}
+
+.elementContainer:hover .rightGroup {
+  visibility: visible;
+}
+
+.toggleButton {
+  margin-right: 5px;
+}
+
+.addButton, .deleteButton {
+  margin-left: 6px;
+}
+
+.downloadButton {
+  position: absolute;
+  left: auto;
+  right: auto;
+  top: 10px;
+  width: 150px;
+}
+
+
+/* Adjust styles as needed to fit your application's requirements */

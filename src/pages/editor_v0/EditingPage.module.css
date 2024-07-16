@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .section {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .section:nth-child(1), .section:nth-child(3) {
+    width: 250px;
+  }
+  
+  .section:nth-child(2) {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  

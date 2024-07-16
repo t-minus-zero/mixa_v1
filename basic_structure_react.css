@@ -1,0 +1,85 @@
+/* Goal 
+Mixa let's you create apps/automations/visualizations etc.
+It is NOT meant to create apps that work outside the web-page.
+Apps created with Mixa work inside the framework itself.
+
+The basic html elements have the basic html names like DIV, H1, etc.
+
+The user can create a collection of 
+visual componenets 'View': visualization of data or anything else
+logic components 'Logic' : black-boxes that take input data and give output
+data components 'Data'   : databases/tables for data organization 
+
+Data components can be indipendent from the app and can fetch data from some source indipendently
+these can be modified by different apps if given access to it as it could be public or property of an user
+this data acts almost as a 'google drive' for different apps.
+
+Can create views for free but if you want to have access to Data and Logic in a limited way, need to register.
+If you want access to more data, logic and views or have always-running apps or self-updating ones you need to buy subscription plan.
+If you want to sell your logic/apps/veiws etc. you need a subscription plan.
+
+In views, the html elements can be wrapped in logic
+
+First step is to get the view editing working.
+
+*/
+
+/* 
+
+--- Component /HTML Eelement
+
+html element icon - component name - actions icons
+
+Props section [Component only] - shown on left
+props[default/placeholder value/variable/function] (passed down from above / these have to be populated in the parent)
+    props serve kind of like options for the component and or needed info to make it work and connect properly
+    this allows for the creation of whole apps that can be nested one within the other and connected using views
+
+State section [components only] - shown on left
+    variables (if it's a component, the become automatically accessible from parent using setting functions?)
+
+Logic section [components only] - shown on left
+    logic functions
+
+Render section [components only] - shown in the center
+
+Content Hirearchy section [components only] - shown on right
+    default static content (plain text, html elements, variable)
+    logic(variables)->[static content / html elements / components]
+        do i have to distinguish between in-line logic and separate functions logic?
+
+Classes section
+    default classes and other classes
+    logic(variables)->[classes]
+
+Triggers section
+    trigger[logic function(variables)]
+
+---
+
+Component view when nested in hirearchy:
+Options/props needed/wanted by the component (need to be populated by static values or variables or functions)
+state is not visible
+logic is not visible
+render is not visible
+Classes section
+Triggers section
+
+---
+
+Content hirerchy can be seen if you expand the object
+should i make a normal hirearchy view and put the options etc. on a side menu?
+
+what can i see about a nested component
+
+---
+
+
+---
+section to add css classes (can be loaded in from collection)
+1 or more classes can be set as default
+
+section to add logic
+can be trigger events, conditional css classes, content logic
+
+*/

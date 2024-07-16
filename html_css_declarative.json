@@ -1,0 +1,19 @@
+{
+    "type": "p",
+    "content": "Welcome, {username}!",
+    "attributes": {
+      "id": "welcomeText",
+      "data-user": "{userId}"
+    },
+    "dataBindings": {
+      "username": {
+        "source": "state",
+        "path": "currentUser.name"
+      },
+      "userId": {
+        "source": "state",
+        "path": "currentUser.id"
+      }
+    }
+  }
+  
